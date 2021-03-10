@@ -1,0 +1,30 @@
+<div class="row mt-5">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <form #formRef="ngForm"  (ngSubmit)="onSubmit(formRef)">
+            <!-- username -->
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="un" placeholder="Username" name="username"
+                    ngModel>
+                <label for="un">Username</label>
+            </div>
+
+            <!-- password -->
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="pw" placeholder="Password" name="password"
+                    ngModel>
+                <label for="pw">Password</label>
+            </div>
+
+            <!-- email -->
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="em" placeholder="Email" name="email" ngModel>
+                <label for="em">E-mail</label>
+            </div>
+
+            <!-- submit button -->
+            <button class="btn btn-primary">Register</button>
+        </form>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
